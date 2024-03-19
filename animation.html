@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes move1 {
+        0% {
+        }
+        25% {
+          filter: blur(3px);
+        }
+
+        50% {
+          transform: translate(50vw);
+        }
+        85% {
+          filter: none;
+        }
+
+        100% {
+        }
+      }
+      @keyframes move2 {
+        0% {
+        }
+        25% {
+          filter: none;
+        }
+
+        50% {
+          transform: translate(-50vw);
+        }
+        85% {
+          filter: blur(3px);
+        }
+        100% {
+        }
+      }
+
+      #box {
+        width: 100%;
+        height: 50vh;
+        background: radial-gradient(#e66465, #9198e5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #box > div {
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        padding: 5px;
+      }
+      #box > div:nth-child(1) {
+        animation: move1 4s infinite ease-out;
+      }
+      #box > div:nth-child(2) {
+        animation: move2 4s infinite ease-out;
+      }
+      #box > div > img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div>
+        <img src="https://pngimg.com/d/tom_and_jerry_PNG58.png" alt="" />
+      </div>
+      <div>
+        <img
+          src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

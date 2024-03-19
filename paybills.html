@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9a9fd82d89.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            padding:0px;
+            margin: 0px;
+        }
+        #container{
+            width: 100%;
+            height: 100vh;
+            background-color: yellow;
+        }
+        div#box{
+            width: 250px;
+            height: 250px;
+            margin-left:60%;
+            margin-top: 200px;
+            border-radius:50%;
+            animation: rota 8s ease-in-out infinite;
+        }
+        div#box>div{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #home{
+            position: absolute;
+            top:0%;
+            left:40%;
+        }
+        #phone{
+            position: absolute;
+            top:-6%;
+            left:68%;
+        }
+        #laptop{
+            position:absolute;
+            top:0%;
+            left:82%;
+        }
+        #twitter{
+            position:absolute;
+            top:17%;
+            left:75%;
+        }
+        #facebook{
+            position:absolute;
+            top:20%;
+            left:45%;
+        }
+        #youtube{
+            position:absolute ;
+            top:-8%;
+            left:13%;
+        }
+        #bulb{
+            position:absolute ;
+            top:-50%;
+            left:0%;
+        }
+        #camera{
+            position:absolute ;
+            top:-96%;
+            left:10%;
+        }
+
+         @keyframes rota{
+            0%{
+
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+           100% {
+                transform: rotate(360deg);
+            }
+        } 
+        div#para{
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            transform: translateX(-100px) translateY(50vh);
+            animation: move 4s ease-in-out infinite;
+        }
+        @keyframes move{
+            100%{
+                transform: translateX(25vw) translateY(50vh);
+                color:blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="para">
+            <p>Pay bills instantly</p>
+        </div>
+        <div id="box">
+            <div id="home"><i class="fa-solid fa-house"></i></div>
+            <div id="phone"><i class="fa-solid fa-phone"></i></div>
+            <div id="laptop"><i class="fa-solid fa-laptop"></i></div>
+            <div id="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div id="facebook"><i class="fa-brands fa-facebook"></i></div>
+            <div id="youtube"><i class="fa-brands fa-youtube"></i></div>
+            <div id="bulb"><i class="fa-regular fa-lightbulb"></i></div>
+            <div id="camera"><i class="fa-solid fa-camera"></i></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes function {
+        0% {
+        }
+        100% {
+          transform: scale(2);
+          box-shadow: red 0px 54px 55px, red 0px -12px 30px, red 0px 4px 6px,
+            red 0px 12px 13px, red 0px -3px 5px;
+        }
+      }
+      #box {
+        width: 100%;
+        height: 100vh;
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+      }
+      #box > div {
+        width: 25%;
+        height: 50vh;
+        background-color: blue;
+        animation: function 1s infinite;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div id="small-box"></div>
+    </div>
+  </body>
+</html>
